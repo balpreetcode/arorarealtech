@@ -1,6 +1,7 @@
 # Large files to exclude
 aroradotcom_code.zip
 aroradotcom/web/sites/default/files/
+aroradotcom_db.sql
 
 # Playwright cache
 .playwright-mcp/

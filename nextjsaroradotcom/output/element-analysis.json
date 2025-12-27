@@ -1,0 +1,90 @@
+[
+  {
+    "section": "TOP BAR",
+    "component": "Useful Websites Link",
+    "status": "Not Found",
+    "selector": "a[href=\"/websites\"]"
+  },
+  {
+    "section": "TOP BAR",
+    "component": "Gurgaon Maps Link",
+    "status": "Not Found",
+    "selector": "a[href=\"/maps\"]"
+  },
+  {
+    "section": "TOP BAR",
+    "component": "Important Documents Link",
+    "status": "Not Found",
+    "selector": "a[href=\"/important-documents\"]"
+  },
+  {
+    "section": "TOP BAR",
+    "component": "Facebook Icon",
+    "status": "Not Found",
+    "selector": "a[href*=\"facebook\"]"
+  },
+  {
+    "section": "TOP BAR",
+    "component": "LinkedIn Icon",
+    "status": "Not Found",
+    "selector": "a[href*=\"linkedin\"]"
+  },
+  {
+    "section": "TOP BAR",
+    "component": "WhatsApp Button",
+    "status": "Not Found",
+    "selector": "a[href*=\"wa.me\"]"
+  },
+  {
+    "section": "TOP BAR",
+    "component": "Phone Button",
+    "status": "Not Found",
+    "selector": "a[href*=\"tel:\"]"
+  },
+  {
+    "section": "NAVIGATION",
+    "component": "HOME Link",
+    "status": "Not Found",
+    "href": "/"
+  },
+  {
+    "section": "NAVIGATION",
+    "component": "PROPERTIES Link",
+    "status": "Not Found",
+    "href": "/properties"
+  },
+  {
+    "section": "NAVIGATION",
+    "component": "GURUGRAM MAPS Link",
+    "status": "Not Found",
+    "href": "/maps"
+  },
+  {
+    "section": "NAVIGATION",
+    "component": "NEWS Link",
+    "status": "Not Found",
+    "href": "/news"
+  },
+  {
+    "section": "NAVIGATION",
+    "component": "ABOUT US Link",
+    "status": "Not Found",
+    "href": "/about-us"
+  },
+  {
+    "section": "NAVIGATION",
+    "component": "CONTACT US Link",
+    "status": "Not Found",
+    "href": "/contact-us"
+  },
+  {
+    "section": "HERO SECTION",
+    "component": "Tagline",
+    "status": "Not Found"
+  },
+  {
+    "section": "HERO SECTION",
+    "component": "Main Title",
+    "status": "Not Found"
+  }
+]

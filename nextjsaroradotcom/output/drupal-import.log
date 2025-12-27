@@ -1,0 +1,236 @@
+
+> nextjsaroradotcom@1.0.0 import:drupal
+> tsx scripts/import-drupal.ts
+
+🚀 Starting Drupal 8 import...
+
+📁 Importing taxonomy terms...
+Found 12 terms
+Imported 12/12 terms
+
+📄 Importing nodes...
+Found 5953 nodes
+Imported 100/5953 nodes
+Imported 200/5953 nodes
+Imported 300/5953 nodes
+Imported 400/5953 nodes
+Imported 500/5953 nodes
+Imported 600/5953 nodes
+Imported 700/5953 nodes
+Imported 800/5953 nodes
+Imported 900/5953 nodes
+Imported 1000/5953 nodes
+Imported 1100/5953 nodes
+Imported 1200/5953 nodes
+Imported 1300/5953 nodes
+Imported 1400/5953 nodes
+Imported 1500/5953 nodes
+Imported 1600/5953 nodes
+Imported 1700/5953 nodes
+Imported 1800/5953 nodes
+Imported 1900/5953 nodes
+Imported 2000/5953 nodes
+Imported 2100/5953 nodes
+Imported 2200/5953 nodes
+Imported 2300/5953 nodes
+Imported 2400/5953 nodes
+Imported 2500/5953 nodes
+Imported 2600/5953 nodes
+Imported 2700/5953 nodes
+Imported 2800/5953 nodes
+Imported 2900/5953 nodes
+Imported 3000/5953 nodes
+Imported 3100/5953 nodes
+Imported 3200/5953 nodes
+Imported 3300/5953 nodes
+Imported 3400/5953 nodes
+Imported 3500/5953 nodes
+Imported 3600/5953 nodes
+Imported 3700/5953 nodes
+Imported 3800/5953 nodes
+Imported 3900/5953 nodes
+Imported 4000/5953 nodes
+Imported 4100/5953 nodes
+Imported 4200/5953 nodes
+Imported 4300/5953 nodes
+Imported 4400/5953 nodes
+Imported 4500/5953 nodes
+Imported 4600/5953 nodes
+Imported 4700/5953 nodes
+Imported 4800/5953 nodes
+Imported 4900/5953 nodes
+Imported 5000/5953 nodes
+Imported 5100/5953 nodes
+Imported 5200/5953 nodes
+Imported 5300/5953 nodes
+Imported 5400/5953 nodes
+Imported 5500/5953 nodes
+Imported 5600/5953 nodes
+Imported 5700/5953 nodes
+Imported 5800/5953 nodes
+Imported 5900/5953 nodes
+Imported 5953/5953 nodes
+
+🔗 Importing node-term relationships...
+Found 5944 node-term relationships
+Imported 100/5944 relationships
+Imported 200/5944 relationships
+Imported 300/5944 relationships
+Imported 400/5944 relationships
+Imported 500/5944 relationships
+Imported 600/5944 relationships
+Imported 700/5944 relationships
+Imported 800/5944 relationships
+Imported 900/5944 relationships
+Imported 1000/5944 relationships
+Imported 1100/5944 relationships
+Imported 1200/5944 relationships
+Imported 1300/5944 relationships
+Imported 1400/5944 relationships
+Imported 1500/5944 relationships
+Imported 1600/5944 relationships
+Imported 1700/5944 relationships
+Imported 1800/5944 relationships
+Imported 1900/5944 relationships
+Imported 2000/5944 relationships
+Imported 2100/5944 relationships
+Imported 2200/5944 relationships
+Imported 2300/5944 relationships
+Imported 2400/5944 relationships
+Imported 2500/5944 relationships
+Imported 2600/5944 relationships
+Imported 2700/5944 relationships
+Imported 2800/5944 relationships
+Imported 2900/5944 relationships
+Imported 3000/5944 relationships
+Imported 3100/5944 relationships
+Imported 3200/5944 relationships
+Imported 3300/5944 relationships
+Imported 3400/5944 relationships
+Imported 3500/5944 relationships
+Imported 3600/5944 relationships
+Imported 3700/5944 relationships
+Imported 3800/5944 relationships
+Imported 3900/5944 relationships
+Imported 4000/5944 relationships
+Imported 4100/5944 relationships
+Imported 4200/5944 relationships
+Imported 4300/5944 relationships
+Imported 4400/5944 relationships
+Imported 4500/5944 relationships
+Imported 4600/5944 relationships
+Imported 4700/5944 relationships
+Imported 4800/5944 relationships
+Imported 4900/5944 relationships
+Imported 5000/5944 relationships
+Imported 5100/5944 relationships
+Imported 5200/5944 relationships
+Imported 5300/5944 relationships
+Imported 5400/5944 relationships
+Imported 5500/5944 relationships
+Imported 5600/5944 relationships
+Imported 5700/5944 relationships
+Imported 5800/5944 relationships
+Imported 5900/5944 relationships
+Imported 5944/5944 relationships
+
+🔗 Importing URL aliases...
+Found 5964 URL aliases
+Imported 100/5964 aliases
+Imported 200/5964 aliases
+Imported 300/5964 aliases
+Imported 400/5964 aliases
+Imported 500/5964 aliases
+Imported 600/5964 aliases
+Imported 700/5964 aliases
+Imported 800/5964 aliases
+Imported 900/5964 aliases
+Imported 1000/5964 aliases
+Imported 1100/5964 aliases
+Imported 1200/5964 aliases
+Imported 1300/5964 aliases
+Imported 1400/5964 aliases
+Imported 1500/5964 aliases
+Imported 1600/5964 aliases
+Imported 1700/5964 aliases
+Imported 1800/5964 aliases
+Imported 1900/5964 aliases
+Imported 2000/5964 aliases
+Imported 2100/5964 aliases
+Imported 2200/5964 aliases
+Imported 2300/5964 aliases
+Imported 2400/5964 aliases
+Imported 2500/5964 aliases
+Imported 2600/5964 aliases
+Imported 2700/5964 aliases
+Imported 2800/5964 aliases
+Imported 2900/5964 aliases
+Imported 3000/5964 aliases
+Imported 3100/5964 aliases
+Imported 3200/5964 aliases
+Imported 3300/5964 aliases
+Imported 3400/5964 aliases
+Imported 3500/5964 aliases
+Imported 3600/5964 aliases
+Imported 3700/5964 aliases
+Imported 3800/5964 aliases
+Imported 3900/5964 aliases
+Imported 4000/5964 aliases
+Imported 4100/5964 aliases
+Imported 4200/5964 aliases
+Imported 4300/5964 aliases
+Imported 4400/5964 aliases
+Imported 4500/5964 aliases
+Imported 4600/5964 aliases
+Imported 4700/5964 aliases
+Imported 4800/5964 aliases
+Imported 4900/5964 aliases
+Imported 5000/5964 aliases
+Imported 5100/5964 aliases
+Imported 5200/5964 aliases
+Imported 5300/5964 aliases
+Imported 5400/5964 aliases
+Imported 5500/5964 aliases
+Imported 5600/5964 aliases
+Imported 5700/5964 aliases
+Imported 5800/5964 aliases
+Imported 5900/5964 aliases
+Imported 5964/5964 aliases
+
+🔗 Creating default aliases for nodes...
+Created default aliases for 5952 nodes
+✅ Import completed successfully!
+/bin/bash: tsx: command not found
+🖼️  Starting image import from Drupal 8...
+
+Looking for image field tables...
+Found image tables: [
+  'media__field_media_image',
+  'media_revision__field_media_image',
+  'node__field_banner_image',
+  'node_revision__field_banner_image'
+]
+
+Found 0 node-image relationships
+No images found. Exiting.
+🖼️  Starting image import from Drupal 8...
+
+Looking for image field tables...
+Found image tables: [
+  'media__field_media_image',
+  'media_revision__field_media_image',
+  'node__field_banner_image',
+  'node_revision__field_banner_image'
+]
+
+Using table: node__field_banner_image
+
+Found 39 node-image relationships
+
+Fetching file data...
+Found 29 files
+
+Updating nodes with image URLs...
+Updated 39/39 images
+
+✅ Successfully updated 36 nodes with images!

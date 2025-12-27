@@ -1,0 +1,171 @@
+
+> nextjsaroradotcom@1.0.0 dev
+> next dev
+
+ ⚠ Port 3000 is in use, trying 3001 instead.
+ ⚠ Port 3001 is in use, trying 3002 instead.
+  ▲ Next.js 14.2.33
+  - Local:        http://localhost:3002
+  - Environments: .env
+
+ ✓ Starting...
+ ✓ Ready in 5.2s
+ ○ Compiling /[[...slug]] ...
+ ✓ Compiled /[[...slug]] in 6.7s (443 modules)
+ GET / 200 in 8602ms
+ GET / 200 in 316ms
+ GET /about-us 200 in 139ms
+ GET / 200 in 161ms
+ GET / 200 in 116ms
+ ✓ Compiled in 1875ms (462 modules)
+ ✓ Compiled in 361ms (228 modules)
+ GET / 200 in 443ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/home/usr1/code/arorarealtech/nextjsaroradotcom/.next/cache/webpack/client-development/2.pack.gz_' -> '/home/usr1/code/arorarealtech/nextjsaroradotcom/.next/cache/webpack/client-development/2.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/home/usr1/code/arorarealtech/nextjsaroradotcom/.next/cache/webpack/server-development/0.pack.gz_' -> '/home/usr1/code/arorarealtech/nextjsaroradotcom/.next/cache/webpack/server-development/0.pack.gz'
+ GET / 200 in 164ms
+ GET / 200 in 210ms
+ GET / 200 in 168ms
+ GET /news 404 in 141ms
+ GET / 200 in 170ms
+ GET /properties 404 in 91ms
+ GET / 200 in 134ms
+ GET /contact-us 200 in 115ms
+ GET /about-us 200 in 74ms
+ GET /customer-reviews 404 in 147ms
+ GET /news 404 in 99ms
+ GET /gurugram-maps 404 in 68ms
+ GET /properties 404 in 105ms
+ GET / 200 in 109ms
+ ✓ Compiled in 545ms (228 modules)
+ ✓ Compiled in 367ms (228 modules)
+ ✓ Compiled in 440ms (228 modules)
+ ✓ Compiled in 1010ms (459 modules)
+ GET /_next/static/webpack/70232f2a23084305.webpack.hot-update.json 404 in 294ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload when aroradotcom/app/components/PropertyFilters.tsx","ids":["default"]} changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 200 in 365ms
+ GET / 200 in 172ms
+ ✓ Compiled in 435ms (233 modules)
+ GET /?filter=plots 200 in 380ms
+ GET /?filter=plots 200 in 144ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/home/usr1/code/arorarealtech/nextjsaroradotcom/.next/cache/webpack/server-development/0.pack.gz_' -> '/home/usr1/code/arorarealtech/nextjsaroradotcom/.next/cache/webpack/server-development/0.pack.gz'
+ GET / 200 in 194ms
+ GET /?filter=plots 200 in 117ms
+ GET /?filter=plots 200 in 92ms
+ GET /?filter=residential 200 in 88ms
+ GET /?filter=residential 200 in 92ms
+ GET /?filter=agricultural 200 in 58ms
+ GET /?filter=commercial 200 in 87ms
+ ✓ Compiled in 384ms (233 modules)
+ ✓ Compiled in 295ms (233 modules)
+ ✓ Compiled in 710ms (459 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/home/usr1/code/arorarealtech/nextjsaroradotcom/.next/cache/webpack/client-development/0.pack.gz_' -> '/home/usr1/code/arorarealtech/nextjsaroradotcom/.next/cache/webpack/client-development/0.pack.gz'
+ ✓ Compiled in 540ms (459 modules)
+ ✓ Compiled in 293ms (459 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/home/usr1/code/arorarealtech/nextjsaroradotcom/.next/cache/webpack/server-development/0.pack.gz_' -> '/home/usr1/code/arorarealtech/nextjsaroradotcom/.next/cache/webpack/server-development/0.pack.gz'
+ GET / 200 in 522ms
+ GET /nursery-school-site-for-sale-in-sushant-lok-1-gurgaon 200 in 119ms
+ GET /?filter=institutional 200 in 128ms
+ GET /east-facing-plot-for-sale-in-sector-27-gurugram-size-8-marla-204-sq-yd 200 in 92ms
+ GET / 200 in 182ms
+ ✓ Compiled in 339ms (233 modules)
+ GET / 200 in 343ms
+ GET / 200 in 136ms
+ ○ Compiling /robots.txt ...
+ ✓ Compiled /robots.txt in 856ms (263 modules)
+ GET /robots.txt 200 in 1008ms
+ GET / 200 in 454ms
+ GET /properties 404 in 327ms
+ GET /maps 200 in 79ms
+ GET / 200 in 203ms
+ GET / 200 in 139ms
+ GET /contact-us 200 in 88ms
+ GET /about-us 200 in 124ms
+ GET /properties 404 in 115ms
+ GET /maps 200 in 84ms
+ GET /news 404 in 87ms
+ GET / 200 in 165ms
+ ✓ Compiled in 554ms (233 modules)
+ ✓ Compiled in 546ms (233 modules)
+ ✓ Compiled in 486ms (473 modules)
+ ✓ Compiled in 477ms (473 modules)
+ ✓ Compiled in 525ms (473 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 705ms (460 modules)
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 4.6s (694 modules)
+ GET / 404 in 5732ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat '/home/usr1/code/arorarealtech/nextjsaroradotcom/.next/server/app/robots.txt'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/robots.txt/route' in /home/usr1/code/arorarealtech/nextjsaroradotcom/node_modules/next/dist/server for build dependencies doesn't lead to expected result '/home/usr1/code/arorarealtech/nextjsaroradotcom/.next/server/app/robots.txt/route.js', but to 'Error: Can't resolve '../../../../.next/server/app/robots.txt/route' in '/home/usr1/code/arorarealtech/nextjsaroradotcom/node_modules/next/dist/server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/robots.txt/route (expected /home/usr1/code/arorarealtech/nextjsaroradotcom/.next/server/app/robots.txt/route.js)
+<w>  at file dependencies /home/usr1/code/arorarealtech/nextjsaroradotcom/node_modules/next/dist/server/require.js
+<w>  at file /home/usr1/code/arorarealtech/nextjsaroradotcom/node_modules/next/dist/server/require.js
+<w>  at file dependencies /home/usr1/code/arorarealtech/nextjsaroradotcom/node_modules/next/dist/server/load-components.js
+<w>  at file /home/usr1/code/arorarealtech/nextjsaroradotcom/node_modules/next/dist/server/load-components.js
+<w>  at file dependencies /home/usr1/code/arorarealtech/nextjsaroradotcom/node_modules/next/dist/build/utils.js
+<w>  at file /home/usr1/code/arorarealtech/nextjsaroradotcom/node_modules/next/dist/build/utils.js
+<w>  at file dependencies /home/usr1/code/arorarealtech/nextjsaroradotcom/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at file /home/usr1/code/arorarealtech/nextjsaroradotcom/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+<w>  at resolve commonjs /home/usr1/code/arorarealtech/nextjsaroradotcom/node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js
+ GET / 200 in 639ms
+ GET / 200 in 239ms
+ GET /login 404 in 137ms
+ GET / 200 in 310ms
+ ○ Compiling /robots.txt ...
+ ✓ Compiled /robots.txt in 655ms (303 modules)
+ GET /robots.txt 200 in 834ms
+ ✓ Compiled /sitemap.xml in 368ms (305 modules)
+ GET /sitemap.xml 200 in 2282ms
+ GET /config.json 404 in 284ms
+ GET / 200 in 708ms
+ GET / 200 in 567ms
+ GET /robots.txt 200 in 47ms
+ POST / 200 in 200ms
+ GET / 200 in 143ms
+ GET / 200 in 304ms
+ GET /wiki 404 in 108ms
+ GET /.well-known/security.txt 404 in 132ms
+ GET / 200 in 286ms
+ GET / 200 in 252ms
+ GET / 200 in 135ms
+ GET / 200 in 177ms
+ GET /security.txt 404 in 177ms
+ GET /robots.txt 200 in 43ms
+ GET / 200 in 268ms
+ GET /robots.txt 200 in 33ms
+ GET / 200 in 266ms
+ GET / 200 in 161ms
+ GET /robots.txt 200 in 23ms
+ GET /robots.txt 200 in 46ms
+ GET / 200 in 279ms
+ GET /.well-known/security.txt 404 in 152ms
+ GET / 200 in 312ms
+ GET / 200 in 303ms
+ GET / 200 in 261ms
+ GET / 200 in 186ms
+ GET /.well-known/security.txt 404 in 144ms
+ GET / 200 in 263ms
+ GET /robots.txt 200 in 56ms
+ GET / 200 in 272ms
+ GET / 200 in 270ms
+ GET / 200 in 167ms
+ GET /.well-known/security.txt 404 in 105ms
+ GET / 200 in 175ms
+ GET / 200 in 354ms
+ GET /sitemap.xml 200 in 2053ms
+ GET / 200 in 292ms
+ GET / 200 in 346ms
+ GET /robots.txt 200 in 115ms
+ GET / 200 in 456ms
+ GET /CHANGELOG.txt 404 in 131ms
+ GET /core/CHANGELOG.txt 404 in 127ms
+ GET /includes/bootstrap.inc 404 in 118ms
+ GET /core/includes/bootstrap.inc 404 in 108ms
+ GET / 200 in 372ms
+ GET / 200 in 160ms
+ GET /robots.txt 200 in 22ms
+ GET / 200 in 323ms
+ GET / 200 in 350ms
+ GET /sitemap.xml 200 in 4723ms
+ GET /sitemap.xml 200 in 1482ms
+[?25h

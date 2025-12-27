@@ -1,0 +1,113 @@
+// Prisma schema for Next.js CMS preserving Drupal SEO
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model UrlAlias {
+  id          Int      @id @default(autoincrement())
+  sourcePath  String   @unique @map("source_path") @db.VarChar(767)
+  targetType  String   @map("target_type") @db.VarChar(50) // node|term|view|static
+  targetId    Int?     @map("target_id")
+  langcode    String   @default("en") @db.VarChar(12)
+  status      Int      @default(200) // 200, 301, 410
+  redirectTo  String?  @map("redirect_to") @db.VarChar(1000)
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  @@index([targetType, targetId])
+  @@index([langcode])
+  @@map("url_aliases")
+}
+
+model Node {
+  id              Int            @id @default(autoincrement())
+  nid             Int            @unique
+  type            String         @db.VarChar(50)
+  title           String         @db.VarChar(255)
+  slug            String         @db.VarChar(255)
+  langcode        String         @default("en") @db.VarChar(12)
+  published       Boolean        @default(true)
+  createdAt       DateTime       @default(now()) @map("created_at")
+  updatedAt       DateTime       @updatedAt @map("updated_at")
+  summary         String?        @db.Text
+  bodyHtml        String?        @map("body_html") @db.LongText
+  author          String?        @db.VarChar(255)
+  imageUrl        String?        @map("image_url") @db.VarChar(2048)
+  jsonLd          String?        @map("jsonld") @db.Text
+  metaTitle       String?        @map("meta_title") @db.VarChar(255)
+  metaDescription String?        @map("meta_description") @db.Text
+  canonicalPath   String?        @map("canonical_path") @db.VarChar(2048)
+  robots          String?        @db.VarChar(100)
+  hreflangLinks   String?        @map("hreflang_links") @db.Text // JSON array
+  ogTitle         String?        @map("og_title") @db.VarChar(255)
+  ogDescription   String?        @map("og_description") @db.Text
+  ogImage         String?        @map("og_image") @db.VarChar(2048)
+  twitterCard     String?        @map("twitter_card") @db.VarChar(50)
+
+  nodeTerms       NodeTerm[]
+
+  @@index([type])
+  @@index([published])
+  @@index([langcode])
+  @@index([slug])
+  @@map("nodes")
+}
+
+model TaxonomyTerm {
+  id              Int         @id @default(autoincrement())
+  tid             Int         @unique
+  vocabulary      String      @db.VarChar(50)
+  name            String      @db.VarChar(255)
+  slug            String      @db.VarChar(255)
+  langcode        String      @default("en") @db.VarChar(12)
+  descriptionHtml String?     @map("description_html") @db.Text
+  metaTitle       String?     @map("meta_title") @db.VarChar(255)
+  metaDescription String?     @map("meta_description") @db.Text
+  createdAt       DateTime    @default(now()) @map("created_at")
+  updatedAt       DateTime    @updatedAt @map("updated_at")
+
+  nodeTerms       NodeTerm[]
+
+  @@index([vocabulary])
+  @@index([langcode])
+  @@map("taxonomy_terms")
+}
+
+model NodeTerm {
+  id     Int          @id @default(autoincrement())
+  nodeId Int          @map("node_id")
+  termId Int          @map("term_id")
+
+  node   Node         @relation(fields: [nodeId], references: [id], onDelete: Cascade)
+  term   TaxonomyTerm @relation(fields: [termId], references: [id], onDelete: Cascade)
+
+  @@unique([nodeId, termId])
+  @@index([termId])
+  @@map("node_terms")
+}
+
+model RouteLog {
+  id        Int      @id @default(autoincrement())
+  path      String   @db.VarChar(767)
+  referer   String?  @db.Text
+  userAgent String?  @map("user_agent") @db.Text
+  timestamp DateTime @default(now())
+
+  @@index([path])
+  @@index([timestamp])
+  @@map("route_logs")
+}
+
+model SiteConfig {
+  id    Int    @id @default(autoincrement())
+  key   String @unique @db.VarChar(100)
+  value String @db.Text
+
+  @@map("site_config")
+}

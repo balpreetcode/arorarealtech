@@ -1,0 +1,82 @@
+🖼️  Starting image import from Drupal 8...
+
+Looking for image field tables...
+Found image tables: [
+  'media__field_media_image',
+  'media_revision__field_media_image',
+  'node__field_banner_image',
+  'node_revision__field_banner_image'
+]
+
+Found 5913 images in table: node__field_test
+
+Found 39 images in table: node__field_banner_image
+
+Found 5952 node-image relationships
+
+Fetching file data...
+Found 5939 files
+
+Updating nodes with image URLs...
+Updated 100/5952 images
+Updated 200/5952 images
+Updated 300/5952 images
+Updated 400/5952 images
+Updated 500/5952 images
+Updated 600/5952 images
+Updated 700/5952 images
+Updated 800/5952 images
+Updated 900/5952 images
+Updated 1000/5952 images
+Updated 1100/5952 images
+Updated 1200/5952 images
+Updated 1300/5952 images
+Updated 1400/5952 images
+Updated 1500/5952 images
+Updated 1600/5952 images
+Updated 1700/5952 images
+Updated 1800/5952 images
+Updated 1900/5952 images
+Updated 2000/5952 images
+Updated 2100/5952 images
+Updated 2200/5952 images
+Updated 2300/5952 images
+Updated 2400/5952 images
+Updated 2500/5952 images
+Updated 2600/5952 images
+Updated 2700/5952 images
+Updated 2800/5952 images
+Updated 2900/5952 images
+Updated 3000/5952 images
+Updated 3100/5952 images
+Updated 3200/5952 images
+Updated 3300/5952 images
+Updated 3400/5952 images
+Updated 3500/5952 images
+Updated 3600/5952 images
+Updated 3700/5952 images
+Updated 3800/5952 images
+Updated 3900/5952 images
+Updated 4000/5952 images
+Updated 4100/5952 images
+Updated 4200/5952 images
+Updated 4300/5952 images
+Updated 4400/5952 images
+Updated 4500/5952 images
+Updated 4600/5952 images
+Updated 4700/5952 images
+Updated 4800/5952 images
+Updated 4900/5952 images
+Updated 5000/5952 images
+Updated 5100/5952 images
+Updated 5200/5952 images
+Updated 5300/5952 images
+Updated 5400/5952 images
+Updated 5500/5952 images
+Updated 5600/5952 images
+Updated 5700/5952 images
+Updated 5800/5952 images
+Updated 5900/5952 images
+Updated 5952/5952 images
+
+✅ Successfully updated 5949 nodes with images!

@@ -1,0 +1,126 @@
+import { Metadata } from 'next';
+import prisma from '@/lib/db';
+
+export const metadata: Metadata = {
+  title: 'Arora Real Tech - Property Listings',
+  description: 'Find your dream property with Arora Real Tech',
+};
+
+export const revalidate = 3600;
+
+export default async function HomePage() {
+  // Get recent published nodes
+  const recentNodes = await prisma.node.findMany({
+    where: {
+      published: true,
+    },
+    orderBy: {
+      createdAt: 'desc',
+    },
+    take: 20,
+    select: {
+      id: true,
+      title: true,
+      slug: true,
+      summary: true,
+      imageUrl: true,
+      createdAt: true,
+    },
+  });
+
+  // Get URL aliases for these nodes
+  const nodeIds = recentNodes.map((n) => n.id);
+  const aliases = await prisma.urlAlias.findMany({
+    where: {
+      targetId: { in: nodeIds },
+      targetType: 'node',
+    },
+    select: {
+      targetId: true,
+      sourcePath: true,
+    },
+  });
+
+  const aliasMap = new Map(aliases.map((a) => [a.targetId, a.sourcePath]));
+
+  return (
+    <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem' }}>
+      <header style={{ marginBottom: '2rem' }}>
+        <h1 style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>Arora Real Tech</h1>
+        <p style={{ fontSize: '1.2rem', color: '#666' }}>
+          Your trusted partner in real estate
+        </p>
+      </header>
+
+      <nav style={{ marginBottom: '2rem', padding: '1rem', backgroundColor: '#f5f5f5', borderRadius: '8px' }}>
+        <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+          <li><a href="/about-us" style={{ color: '#0066cc' }}>About Us</a></li>
+          <li><a href="/contact-us" style={{ color: '#0066cc' }}>Contact</a></li>
+          <li><a href="/sitemap.xml" style={{ color: '#0066cc' }}>Sitemap</a></li>
+          <li><a href="/rss.xml" style={{ color: '#0066cc' }}>RSS Feed</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>Latest Properties</h2>
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1.5rem' }}>
+          {recentNodes.map((node) => {
+            const url = aliasMap.get(node.id) || `/${node.slug}`;
+            return (
+              <article
+                key={node.id}
+                style={{
+                  border: '1px solid #ddd',
+                  borderRadius: '8px',
+                  overflow: 'hidden',
+                  transition: 'box-shadow 0.3s',
+                }}
+              >
+                {node.imageUrl && (
+                  <img
+                    src={node.imageUrl}
+                    alt={node.title}
+                    style={{ width: '100%', height: '200px', objectFit: 'cover' }}
+                  />
+                )}
+                <div style={{ padding: '1rem' }}>
+                  <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>
+                    <a
+                      href={url}
+                      style={{ color: '#0066cc', textDecoration: 'none' }}
+                    >
+                      {node.title}
+                    </a>
+                  </h3>
+                  {node.summary && (
+                    <p style={{ color: '#666', fontSize: '0.9rem', lineHeight: '1.5' }}>
+                      {node.summary.substring(0, 150)}
+                      {node.summary.length > 150 ? '...' : ''}
+                    </p>
+                  )}
+                  <time
+                    dateTime={node.createdAt.toISOString()}
+                    style={{ fontSize: '0.85rem', color: '#999' }}
+                  >
+                    {new Date(node.createdAt).toLocaleDateString()}
+                  </time>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+
+        {recentNodes.length === 0 && (
+          <p style={{ textAlign: 'center', color: '#666', padding: '2rem' }}>
+            No properties available at the moment.
+          </p>
+        )}
+      </main>
+
+      <footer style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid #ddd', textAlign: 'center', color: '#666' }}>
+        <p>© {new Date().getFullYear()} Arora Real Tech. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+}

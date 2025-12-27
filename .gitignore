@@ -1,0 +1,11 @@
+# Large files to exclude
+aroradotcom_code.zip
+aroradotcom/web/sites/default/files/
+
+# Playwright cache
+.playwright-mcp/
+
+# OS files
+.DS_Store
+*.swp
+*~
